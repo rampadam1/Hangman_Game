@@ -1,3 +1,5 @@
+package Normal;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -44,7 +46,7 @@ public class StartPage extends JFrame {
         JPanel panel = new JPanel();
         JButton button = new JButton("V");
         JLabel label = new JLabel("Difficulty");
-        String[] difficulties = {"Training","Easy","Normal", "Hard", "Impossible"};
+        String[] difficulties = {"Training","Easy", "Normal", "Hard", "Impossible"};
         drop = new JComboBox<>(difficulties);
         drop.setSelectedIndex(RestartEndPage.difficult);
 
