@@ -29,5 +29,4 @@ public class Frame extends JFrame {
 
     public Game getGame(){return game;}
     public Menager getMG(){return MG;}
-    public KeyHandler getKH(){return KH;}
 }

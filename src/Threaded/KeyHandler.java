@@ -86,7 +86,7 @@ public class KeyHandler implements KeyListener {
             }
          }
         }else{
-
+            System.nanoTime();
         }
     }
 

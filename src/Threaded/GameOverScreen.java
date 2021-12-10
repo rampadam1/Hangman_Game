@@ -3,15 +3,13 @@ package Threaded;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.Objects;
 
 import static Threaded.HangmanScreen.*;
 
 public class GameOverScreen extends Screen{
-    private int state;
+    private final int state;
 
 
     public GameOverScreen(Menager mg, int state) {

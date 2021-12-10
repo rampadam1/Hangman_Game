@@ -3,13 +3,11 @@ package Threaded;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
 //The logic of the for some key aspects of the game is in here.
 public class HangmanLogicAlgorithm {
-    private final BufferedReader buffed;
     private final String file;
     private String Hidden;
     private final ArrayList<String> BrokenUp = new ArrayList<>();
@@ -21,7 +19,7 @@ public class HangmanLogicAlgorithm {
         this.file = file;
 
         System.out.println("Getting data from file: ");
-        buffed = loadFile();
+        BufferedReader buffed = loadFile();
 
 
         try{
