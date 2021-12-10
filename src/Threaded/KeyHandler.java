@@ -12,7 +12,7 @@ import static Threaded.HangmanScreen.*;
 public class KeyHandler implements KeyListener {
 
     protected final boolean[] keyBP = new boolean[256];
-    protected static boolean gameIsStopped = false;
+    protected static boolean gameIsStopped = true;
     @Override
     public void keyTyped(KeyEvent e) {
 
@@ -38,7 +38,7 @@ public class KeyHandler implements KeyListener {
                     notif = "Looks like you guessed incorrectly!";
                     counter++;
                     try {
-                        img = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream("images/Normal/HangmanState"+counter+".001.png")));
+                        img = ImageIO.read(Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(filepathStarter+counter+".001.png")));
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
@@ -60,7 +60,6 @@ public class KeyHandler implements KeyListener {
                     used.clear();
                     notif = " ";
                     wordLabel = null;
-                    counter = 0;
                     letterUsed = "Letters Used: ";
                     Arrays.fill(number,0);
                     Game.wins++;
@@ -73,7 +72,6 @@ public class KeyHandler implements KeyListener {
                     used.clear();
                     notif = " ";
                     wordLabel = null;
-                    counter = 0;
                     letterUsed = "Letters Used: ";
                     Arrays.fill(number,0);
                     Game.losses++;

@@ -8,6 +8,7 @@ public class Game extends JPanel implements Runnable{
     private final Frame frame;
     protected static int losses =0;
     protected static int wins = 0;
+    protected static int difficult = 1;
 
     private final static int fps = 30;
 
