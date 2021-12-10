@@ -49,7 +49,7 @@ public class HangmanScreen extends Screen{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(word);
+
         MG.getFrame().requestFocus();
     }
 
